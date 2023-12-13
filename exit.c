@@ -15,26 +15,19 @@ void exit_shell(void)
 }
 
 /**
-  * main - entry point
-  * Return: Always 0
-*/
-
-int main(void)
-{
-	char input[100];
-
-	printf("Hello, Shell!\n");
-
-	while (01)
-	{
-		printf("$ ");
-		fgets(input, 100, stdin);
-		/* Check if the input is "exit"*/
-		if (strcmp(input, "exit\n") == 0)
-		{
-			exit_shell();
-		}
-		/* Add code to handle other commands here*/
-	}
-return (0);
-}
+ * char input[100];
+ *
+ * printf("Hello, Shell!\n");
+ * while (1)
+ * {
+ * printf("$ ");
+ * fgets(input, 100, stdin);
+ * Check if the input is "exit"
+ * if (strcmp(input, "exit\n") == 0)
+ *	{
+ *		exit_shell();
+ *	}
+ *	Add code to handle other commands here
+ * }
+ * return (0);
+ */

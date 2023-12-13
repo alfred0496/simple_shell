@@ -15,7 +15,9 @@ void exit_shell(void)
 }
 
 /**
- * char input[100];
+ * char - Indicates that each element of the array will be a character.
+ * input - The name of the array, which is a user-defined identifier.
+ * char input[100]; Stores the user input
  *
  * printf("Hello, Shell!\n");
  * while (1)

@@ -4,22 +4,23 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-extern char **environ; /* Declare the environ variable */
-
 /**
 * main - entry point
 * Return: Always 0
 */
 int main(void)
 {
-  char *env_var;
-  int i = 0;
+	int i = 0;
+	extern char **environ; /* Declare the environ variable */
 
-  /*Iterate through the environment variables and print them */
-  while (environ[i] != NULL)
-  {
-    printf("%s\n", environ[i]);
-    i++;
-  }
-  return (0);
+	char *env_var = "shell";
+	printf("%s", env_var);
+
+	/*Iterate through the environment variables and print them */
+	while (environ[i] != NULL)
+	{
+		printf("%s\n", environ[i]);
+		i++;
+	}
+return (0);
 }
